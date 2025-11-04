@@ -1,0 +1,27 @@
+
+
+body{
+    background-color: pink;
+    text-align :center;
+}
+
+p {
+     color:blue;
+     background-color: grey;
+     padding: 5px;
+
+}
+
+#py{
+    color: red;
+    background-color: gainsboro;
+    
+}
+
+.box{
+    height: 300px;
+    width: 500px;
+    background-color: brown;
+    border : 5px solid black;
+
+}
