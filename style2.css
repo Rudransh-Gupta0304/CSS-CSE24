@@ -4,6 +4,7 @@ body{
     padding: 20px;
     height: 250px ;
     width: 500px;
+    text-align: top;
     
 }
 
@@ -14,5 +15,5 @@ body{
     background-color: yellow;
     padding: 40px;
     text-align : center ;
-    margin: auto;
+    margin: 40px 2px 5px 20px;
 }
