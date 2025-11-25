@@ -5,25 +5,45 @@
 
 .conatiner{
     display: flex;
-    height:200px;
+    height:600px;
     width:800px;
     border: 1px solid black;
+
+    /* row ,, column ,, row-reverse ,, coulmn-reverse */
+
+    /* row  rev.. me direction right se bhi ho  jaegi  counting reverse hone ke saath saath    isme main axis horizontal hogi   */
+    /* column rev main axis vertical hogi and up to down hoga  */
     flex-direction:  row row-reverse;
 
+
+
+    /* by default no wrap hoga and next row me shift nhi hoga and compress kar lega apne aap ko */
     flex-wrap: wrap;
+    /* no wrap  // wrap //   wrap-reverse  */
     /* flex-flow: row wrap;  combination of flex wrap and flex direction */
 
-    justify-content:  space-evenly;
-    /* it conatins // flex start // flex end // center // space between // space around // space evenly */
 
-    align-items: flex-start;
+    /* property main axis pe lagti hai depend krta hai uspe konsi main axis hogi */
+    justify-content:  center;
+    /* it conatins // flex start // flex end // center // space between(side me gap nhi hoga ) 
+     space around(left right me equal gap and center ke element me double gap hoga)
+       space evenly(all spaces are equal ) */
+
+
+    align-items: center;
+    /* cross axis pe execute hogi  */
     /* it contains // flex start // flex end // center // stretch // baseline */
 
-    align-content:flex-start;
-    /* it conatin // flex start // flex end // center // stretch // space between // space around */
+
+
+    align-content:stretch;
+    /* same yhe cross axis pe apply karegii */
+    /* it conatin // flex start // flex end // center // stretch // space between() // space around */
+
+
 
     gap:10px;
-    /* gap , rowgap , column-gap     single value represent row // and double value represent row and cloumn both*/
+    /* gap , row-gap , column-gap   single value represent row // and double value represent row and cloumn both*/
     
 }
 
@@ -32,4 +52,16 @@
     width:180px;
     border: 1px solid black;
     background-color: aquamarine;
+    flex-grow: 1;
+    /* total space occupy kar lega jo bhi parent container ki hogi  */
+}
+  
+/* align-self */
+
+.item4{
+    order: -1;
+    /* agar order same hua than html source pe depend karega be default sequence auto selected hooga */
+    flex-grow: 2;
+    /* remaining space se 2times increase karega */
+    align-self: flex-end;
 }
